@@ -1,4 +1,28 @@
+h1 {
+  margin-left: 550px;
+  margin-bottom: 70px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, rgb(160, 165, 170), rgb(52, 70, 129) 60%, #fff 60%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+  
+}
 
+
+
+h1:hover {
+  background-position: 0 11px;
+}
 
   .main {
     height: 100vh;
@@ -100,4 +124,19 @@
     color: beige;
     text-align: center;
   }
- 
+ .skills{
+   margin-left: 400px;
+   margin-top: 120px;
+ }
+ .text{
+  background-color:bisque;
+  opacity: 0.8;
+
+  width: 50%;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: justify;
+  transition: all 0.3s;
+  margin-right: 500px;
+  margin-top: 100px;
+}

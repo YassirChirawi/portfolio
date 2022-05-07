@@ -1,7 +1,287 @@
-.container{
-    background-image: url("/assets/pexels-ylanite-koppens-1906440.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
+
+h1 {
+  margin-left: 600px;
+  margin-bottom: 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, rgb(160, 165, 170), rgb(52, 70, 129) 60%, #fff 60%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+  
 }
+
+
+
+h1:hover {
+  background-position: 0 11px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display:flex;
+  
+  align-items:center;
+  justify-content:center;  
+  height: 100vh;
+  margin: 0;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color:#f4f6f8;
+}
+.sport{
+  display:flex;
+  
+  align-items:center;
+  justify-content:center;
+  height:100%;
+  width:100%;
+  
+  overflow:hidden;
+
+  &__image{
+    position:relative;
+    display:flex;
+    
+    flex-direction:column;
+    justify-content:center;
+    width:250px;
+    height:250px;
+    
+    border-radius:50%;
+    background-image:url('https://img.freepik.com/photos-gratuite/outils-sport_53876-138077.jpg');
+    background-size: cover;
+    transition: ease-in-out .3s;
+    
+    z-index:2;
+    &:before{
+      content: ' ';
+      position:absolute;
+      
+      width:100%;
+      height:100%;
+      top:0;
+      bottom:0;
+      left:0;
+      margin:auto;
+      
+      background: inherit;
+      background-position:bottom;
+      filter:blur(40px) saturate(0%);
+      transform:scaleX(0.4);
+      transition:ease-in-out .4s;
+      border-radius:120px;
+      transform-origin:right;
+      opacity:0;
+      
+      z-index:-1;
+    }
+    .sport__info{
+      position:relative;
+      
+      line-height:1.8;
+      transition:ease-in-out .3s;
+      opacity:0;
+    }
+    .sport__location{
+      transition-delay: .15s;
+    }
+    &:hover{
+      border-radius:0;
+      width:450px;
+      height:310px;
+      
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+      &:before{
+        width:100%;
+        
+        opacity: 0.18;
+        filter:blur(10px) saturate(100%);
+        transform:scale(2.8) translate3d(-18%, 0px, 0px);
+      }
+      
+      .sport__info{
+        transform:translate3d(-60%,0px,0px);
+        opacity:1;
+        color: white;
+        
+      }
+    }
+  }
+}
+  .music{
+    display:flex;
+    
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    
+    overflow:hidden;
+  
+    &__image{
+      position:relative;
+      display:flex;
+      
+      flex-direction:column;
+      justify-content:center;
+      width:250px;
+      height:250px;
+      
+      border-radius:50%;
+      background-image:url('https://www.10wallpaper.com/wallpaper/1366x768/1503/vinyl_record_vinyl_music-HD_Widescreen_Wallpaper_1366x768.jpg');
+      background-size: cover;
+      transition: ease-in-out .3s;
+      
+      z-index:2;
+      &:before{
+        content: ' ';
+        position:absolute;
+        
+        width:100%;
+        height:100%;
+        top:0;
+        bottom:0;
+        left:0;
+        margin:auto;
+        
+        background: inherit;
+        background-position:bottom;
+        filter:blur(40px) saturate(0%);
+        transform:scaleX(0.4);
+        transition:ease-in-out .4s;
+        border-radius:120px;
+        transform-origin:right;
+        opacity:0;
+        
+        z-index:-1;
+      }
+      .music__info{
+        position:relative;
+        
+        line-height:1.8;
+        transition:ease-in-out .3s;
+        opacity:0;
+      }
+      .music__location{
+        transition-delay: .15s;
+      }
+      &:hover{
+        border-radius:0;
+        width:450px;
+        height:310px;
+        
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+        &:before{
+          width:100%;
+          
+          opacity: 0.18;
+          filter:blur(10px) saturate(100%);
+          transform:scale(2.8) translate3d(-18%, 0px, 0px);
+        }
+        
+        .music__info{
+          transform:translate3d(-60%,0px,0px);
+          opacity:1;
+          color: white;
+        }
+      }
+    }
+  }
+  .cinema{
+    display:flex;
+    
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    
+    overflow:hidden;
+  
+    &__image{
+      position:relative;
+      display:flex;
+      
+      flex-direction:column;
+      justify-content:center;
+      width:250px;
+      height:250px;
+      
+      border-radius:50%;
+      background-image:url('https://www.vie-publique.fr/sites/default/files/styles/teaser_inside_link/public/en_bref/image_principale/UE_30_ans_soutien_industries_cinema_177194466_Drupal.jpg?itok=j3XZAJdC');
+      background-size: cover;
+      transition: ease-in-out .3s;
+      
+      z-index:2;
+      &:before{
+        content: ' ';
+        position:absolute;
+        
+        width:100%;
+        height:100%;
+        top:0;
+        bottom:0;
+        left:0;
+        margin:auto;
+        
+        background: inherit;
+        background-position:bottom;
+        filter:blur(40px) saturate(0%);
+        transform:scaleX(0.4);
+        transition:ease-in-out .4s;
+        border-radius:120px;
+        transform-origin:right;
+        opacity:0;
+        
+        z-index:-1;
+      }
+      .cinema__info{
+        position:relative;
+        
+        line-height:1.8;
+        transition:ease-in-out .3s;
+        opacity:0;
+      }
+      .cinema__location{
+        transition-delay: .15s;
+      }
+      &:hover{
+        border-radius:0;
+        width:450px;
+        height:310px;
+        
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(9, 55, 53, 0.08), 0px 16px 24px rgba(9, 55, 53, 0.1), 0px 24px 32px rgba(9, 55, 53, 0.14);
+        &:before{
+          width:100%;
+          
+          opacity: 0.18;
+          filter:blur(10px) saturate(100%);
+          transform:scale(2.8) translate3d(-18%, 0px, 0px);
+        }
+        
+        .cinema__info{
+          transform:translate3d(-60%,0px,0px);
+          opacity:1;
+          color: white;
+        }
+      }
+    }
+  }
+ 
+
+
+
